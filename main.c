@@ -5,6 +5,10 @@ float sum(int a, int b){
     return(a+b);
 }
 
+float subtraction(int a, int b){
+    return(a-b);
+}
+
 float multiplication(int a, int b){
     return(a*b);
 }
@@ -30,6 +34,11 @@ int main(void){
               resultado = sum(a,b);
               sal = 1;
               printf("Result of the sum is: %f\r\n",resultado);
+          }
+          else if (operacion == 2){
+               resultado = subtraction(a,b);
+               sal = 1;
+               printf("Result of the subtraction is: %f\r\n",resultado); 
           }
           else if (operacion == 3){
                resultado = multiplication(a,b);
