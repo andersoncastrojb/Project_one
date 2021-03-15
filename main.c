@@ -54,7 +54,6 @@ int main(void){
                sal = 1;
                printf("Result of the division is: %f\r\n",resultado); 
           }
-
           else{
                 printf("Choose: Sum[1], subtraction[2], multiplication[3], division[4]\r\n--> ");
                 sal = 0;
