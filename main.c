@@ -5,18 +5,6 @@ float sum(int a, int b){
     return(a+b);
 }
 
-float subtraction(int a, int b){
-    return(a-b);
-}
-
-float multiplication(int a, int b){
-    return(a*b);
-}
-
-float division(int a, int b){
-    return( (float) a/b );
-}
-
 int main(void){
 
     int a = 0, b = 0, sal = 0;
@@ -39,22 +27,6 @@ int main(void){
               sal = 1;
               printf("Result of the sum is: %f\r\n",resultado);
           }
-          else if (operacion == 2){
-               resultado = subtraction(a,b);
-               sal = 1;
-               printf("Result of the subtraction is: %f\r\n",resultado); 
-          }
-          else if (operacion == 3){
-               resultado = multiplication(a,b);
-               sal = 1;
-               printf("Result of the multiplication is: %f\r\n",resultado); 
-          }
-          else if (operacion == 4){
-               resultado = division(a,b);
-               sal = 1;
-               printf("Result of the division is: %f\r\n",resultado); 
-          }
-
           else{
                 printf("Choose: Sum[1], subtraction[2], multiplication[3], division[4]\r\n--> ");
                 sal = 0;
