@@ -1,8 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sum(int a, int b){
+float sum(int a, int b){
     return(a+b);
+}
+
+float multiplication(int a, int b){
+    return(a*b);
 }
 
 int main(void){
@@ -27,6 +31,11 @@ int main(void){
               sal = 1;
               printf("Result of the sum is: %f\r\n",resultado);
           }
+          else if (operacion == 3){
+               resultado = multiplication(a,b);
+               sal = 1;
+               printf("Result of the multiplication is: %f\r\n",resultado); 
+          }
           else{
                 printf("Choose: Sum[1], subtraction[2], multiplication[3], division[4]\r\n--> ");
                 sal = 0;
@@ -37,5 +46,6 @@ int main(void){
 
     return(0);
 }
+
 
 
